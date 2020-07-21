@@ -1,3 +1,11 @@
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+const zeroPad = (num, places) => String(num).padStart(places, '0')
+
+function formatDate(date){
+    return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} ${zeroPad(date.getHours(), 2)}:${zeroPad(date.getMinutes(), 2)}:${zeroPad(date.getSeconds(), 2)}`
+}
+
 class Milestone{
     constructor(event_name, date, timer_id){
         this.event_name = event_name;
@@ -10,7 +18,7 @@ class Milestone{
                     <div class="card">
                         <div class="card-content pb-3">
                             <h3 class="card-title">${this.event_name}</h3>
-                            <p>Date: ${this.date.toString()}</p>
+                            <p>Date: ${formatDate(this.date)}</p>
                             <div class="countdown-timer" id="${this.timer_id}">
                             </div>
                         </div>
@@ -46,9 +54,9 @@ class Milestone{
 }
 
 var milestones = [
-    new Milestone("First Bookout", new Date("Aug 28, 2020 18:00:00"), "timer-0001"),
-    new Milestone("BMT Passing Out Parade", new Date("Dec 11, 2020 12:00:00"), "timer-0002"),
-    new Milestone("Operational Ready Date", new Date("Aug 11, 2022 18:00:00"), "timer-0003"),   
+    new Milestone("First Bookout 😍", new Date("Aug 28, 2020 18:00:00"), "timer-0001"),
+    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 11, 2020 12:00:00"), "timer-0002"),
+    new Milestone("Operational Ready Date 🎉", new Date("Aug 11, 2022 18:00:00"), "timer-0003"),   
 ]
 
 window.onload = ()=>{
