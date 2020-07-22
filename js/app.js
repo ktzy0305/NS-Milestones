@@ -1,9 +1,9 @@
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-const zeroPad = (num, places) => String(num).padStart(places, '0')
+const zeroPad = (num, places) => String(num).padStart(places, '0');
 
 function formatDate(date){
-    return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} ${zeroPad(date.getHours(), 2)}:${zeroPad(date.getMinutes(), 2)}:${zeroPad(date.getSeconds(), 2)}`
+    return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()} ${zeroPad(date.getHours(), 2)}:${zeroPad(date.getMinutes(), 2)}:${zeroPad(date.getSeconds(), 2)}`;
 }
 
 class Milestone{
@@ -47,7 +47,7 @@ class Milestone{
             // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(countdown);
-                document.getElementById(this.timer_id).innerHTML = "COMPLETED";
+                document.getElementById(this.timer_id).innerHTML = "<b>COMPLETED</b>";
             }
         }, 1000);
     }
@@ -56,7 +56,7 @@ class Milestone{
 var milestones = [
     new Milestone("First Bookout 😍", new Date("Aug 28, 2020 18:00:00"), "timer-0001"),
     new Milestone("BMT Passing Out Parade 💪", new Date("Dec 11, 2020 12:00:00"), "timer-0002"),
-    new Milestone("Operational Ready Date 🎉", new Date("Aug 11, 2022 18:00:00"), "timer-0003"),   
+    new Milestone("Operational Ready Date 🎉", new Date("Aug 11, 2022 18:00:00"), "timer-0003"),
 ]
 
 window.onload = ()=>{
