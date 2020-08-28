@@ -54,8 +54,8 @@ class Milestone{
 }
 
 var milestones = [
-    new Milestone("First Bookout 😍", new Date("Aug 28, 2020 18:00:00"), "timer-0001"),
-    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 11, 2020 12:00:00"), "timer-0002"),
+    new Milestone("First Bookout 😍", new Date("Aug 28, 2020 09:00:00"), "timer-0001"),
+    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 5, 2020 12:00:00"), "timer-0002"),
     new Milestone("Operational Ready Date 🎉", new Date("Aug 11, 2022 18:00:00"), "timer-0003"),
 ]
 
