@@ -56,9 +56,10 @@ class Milestone{
 var milestones = [
     new Milestone("1st Bookout 😍", new Date("Aug 28, 2020 09:00:00"), "timer-0001"),
     new Milestone("2nd Bookout 🔥", new Date("Sep 5, 2020 15:00:00"), "timer-0002"),
-    new Milestone("1 Month In NS 🌞", new Date("Sep 11, 2020 00:00:00"), "timer-0003"),
-    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 5, 2020 12:00:00"), "timer-0004"),
-    new Milestone("Operational Ready Date 🎉", new Date("Aug 11, 2022 18:00:00"), "timer-0005"),
+    new Milestone("3rd Bookout 😲", new Date("Sep 12, 2020 15:00:00"), "timer-0003"),
+    new Milestone("1 Month In NS 🌞", new Date("Sep 11, 2020 00:00:00"), "timer-0004"),
+    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 5, 2020 12:00:00"), "timer-0005"),
+    new Milestone("Operational Ready Date 🎉", new Date("Aug 11, 2022 18:00:00"), "timer-0006"),
 ]
 
 window.onload = ()=>{
