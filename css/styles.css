@@ -18,3 +18,9 @@ body{
 .card-title{
     font-weight: 600;
 }
+
+.help-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
