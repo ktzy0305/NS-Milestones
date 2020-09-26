@@ -24,3 +24,96 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* Progress Bar */
+svg {
+    width: 200px;
+    height: 200px;
+}
+
+#ring{
+    display: block;
+    margin: auto;
+}
+
+
+.inner-circle{
+    margin: auto;
+    display: block;
+    position: absolute;
+    margin: 20px 20px;
+    width: 160px;
+    height: 160px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.outer-circle{
+    margin: auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.progress-percentage{
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    width: 200px;
+    font-size: 1.5em;
+    z-index: 5;
+}
+
+.outer-circle .bar{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    clip: rect(0px, 100px, 200px, 0px);
+    background-color: #ffffff;
+}
+
+.bar{
+    background-color: rgb(35, 193, 255);
+}
+
+.circle .bar .progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    clip: rect(0px, 100px, 200px, 0px);
+    /* background-color: rgb(35, 193, 255); */
+    background-color: #ffffff;
+}
+
+.circle .left .progress{
+    z-index: 1;
+    animation: left 4s linear both;
+}
+
+@keyframes left{
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.circle .right{
+    z-index: 3;
+    transform: rotate(180deg);
+}
+
+.circle .right .progress{
+    animation: right 4s linear both;
+    animation-delay: 4s;
+}
+
+@keyframes right{
+    100%{
+        transform: rotate(180deg);
+    }
+}
