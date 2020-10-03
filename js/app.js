@@ -56,14 +56,16 @@ class Milestone{
 var milestones = [
     new Milestone("1st Bookout 😍", new Date("Aug 28, 2020 09:00:00"), "timer-0001"),
     new Milestone("2nd Bookout 🔥", new Date("Sep 5, 2020 15:00:00"), "timer-0002"),
-    new Milestone("1 Month In NS 🌞", new Date("Sep 11, 2020 00:00:00"), "timer-0003"),
+    new Milestone("1 Month In NS 1️⃣", new Date("Sep 11, 2020 00:00:00"), "timer-0003"),
     new Milestone("3rd Bookout 😲", new Date("Sep 12, 2020 17:00:00"), "timer-0004"),
     new Milestone("4th Bookout 🙃", new Date("Sep 17, 2020 16:00:00"), "timer-0005"),
     new Milestone("5th Bookout 🥴", new Date("Sep 25, 2020 19:00:00"), "timer-0006"),
-    new Milestone("6th Bookout 😢", new Date("Oct 2, 2020 19:00:00"), "timer-0007"),
-    new Milestone("Last Day in Tekong ✨", new Date("Dec 4, 2020 00:00:00"), "timer-0008"),
-    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 5, 2020 12:00:00"), "timer-0009"),
-    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0010"),
+    new Milestone("6th Bookout 😢", new Date("Oct 2, 2020 21:00:00"), "timer-0007"),
+    new Milestone("7th Bookout 😷", new Date("Oct 9, 2020 21:00:00"), "timer-0008"),
+    new Milestone("2 Months In NS 2️⃣", new Date("Oct 11, 2020 00:00:00"), "timer-0009"),
+    new Milestone("Last Day in Tekong ✨", new Date("Dec 4, 2020 00:00:00"), "timer-0010"),
+    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 5, 2020 12:00:00"), "timer-0011"),
+    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0012"),
 ]
 
 /*
