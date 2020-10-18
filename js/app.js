@@ -64,10 +64,12 @@ var milestones = [
     new Milestone("7th Bookout 😷", new Date("Oct 9, 2020 19:00:00"), "timer-0008"),
     new Milestone("2️⃣ Months In NS", new Date("Oct 11, 2020 00:00:00"), "timer-0009"),
     new Milestone("8th Bookout 🤔", new Date("Oct 17, 2020 12:00:00"), "timer-0010"),
-    new Milestone("End Of Field Camp 🏋️", new Date("Nov 2, 2020 12:00:00"), "timer-0011"),
-    new Milestone("Last Day in Tekong ✨", new Date("Dec 4, 2020 00:00:00"), "timer-0012"),
-    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 5, 2020 12:00:00"), "timer-0013"),
-    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0014"),
+    new Milestone("9th Bookout 😵", new Date("Oct 23, 2020 20:00:00"), "timer-0011"),
+    new Milestone("End Of Field Camp 🏋️", new Date("Nov 2, 2020 12:00:00"), "timer-0012"),
+    new Milestone("10th Bookout 🤭", new Date("Nov 6, 2020 20:00:00"), "timer-0013"),
+    new Milestone("Last Day in Tekong ✨", new Date("Dec 4, 2020 00:00:00"), "timer-0014"),
+    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 5, 2020 12:00:00"), "timer-0015"),
+    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0016"),
 ]
 
 /*
