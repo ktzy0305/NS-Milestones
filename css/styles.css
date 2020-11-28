@@ -25,6 +25,13 @@ body{
     padding: 0;
 }
 
+/* NS Completion Percentage */
+#completion-percentage{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
 /* Progress Bar */
 svg {
     width: 200px;

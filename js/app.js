@@ -1,5 +1,9 @@
+// Variables
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+// Constants
+const enlistment_date = new Date("Aug 11, 2020 00:00:00")
+const ord_date = new Date("Aug 10, 2022 00:00:00")
 const zeroPad = (num, places) => String(num).padStart(places, '0');
 
 function formatDate(date){
@@ -70,11 +74,19 @@ var milestones = [
     new Milestone("3️⃣ Months In NS", new Date("Nov 11, 2020 00:00:00"), "timer-0014"),
     new Milestone("11th Bookout 🤠", new Date("Nov 12, 2020 12:00:00"), "timer-0015"),
     new Milestone("12th Bookout 😏", new Date("Nov 20, 2020 14:00:00"), "timer-0016"),
-    new Milestone("13th Bookout 🤗", new Date("Nov 27, 2020 18:00:00"), "timer-0017"),
-    new Milestone("Last Day in Tekong ✨", new Date("Dec 4, 2020 00:00:00"), "timer-0018"),
-    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 4, 2020 15:00:00"), "timer-0019"),
+    new Milestone("13th Bookout 🤗", new Date("Nov 27, 2020 16:00:00"), "timer-0017"),
+    new Milestone("BMT Passing Out Parade 💪", new Date("Dec 5, 2020 15:00:00"), "timer-0018"),
+    new Milestone("4️⃣ Months In NS", new Date("Dec 11, 2020 00:00:00"), "timer-0019"),
     new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0020"),
 ]
+
+// ORD Percentage
+function NSCompletionPercentage(){
+    var percentage_header = document.getElementById('completion-percentage');
+    var now = new Date().getTime()
+    var percentage_completed = (now - enlistment_date) / (ord_date - enlistment_date) * 100
+    percentage_header.innerHTML = `${Math.round((percentage_completed + Number.EPSILON) * 100)/100}% Completed`;
+}
 
 /*
 var ring = document.getElementsByTagName('path')[0];
@@ -119,4 +131,5 @@ window.onload = ()=>{
         content.innerHTML += milestones[i].render();
         milestones[i].startCountdown();
     }
+    NSCompletionPercentage();
 }
