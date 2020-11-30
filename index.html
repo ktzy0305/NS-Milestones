@@ -10,24 +10,24 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/circle.css">
     <script src="js/app.js"></script>
 </head>
 
 <body>
     <div class="container">
         <h1>NS Milestones</h1>
-        <div class="row" id="completion-progress">
-            <h2 id="completion-percentage"></h2>
-        </div>
-        <!-- <div class="row" id="progression">
-            <div class="col-4 col-md-6 col-xs-12">
-                <svg>
-                    <path id="ring" fill="#00c790"/>
-                    <circle cx="80" cy="100" r="70" fill="none" stroke="#00c790" stroke-width="10" opacity=".5"/>
-                    <text x="80" y="100" text-anchor="middle" dominant-baseline="central" fill="#00c790" font-size="40" font-weight="bold">64</text>
-                </svg>
+        <div class="row">
+            <div class="middle">
+                <div id="percentage-bar" class="c100 big green">
+                    <span id="completion-percentage"></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
+                    </div>
+                </div>
             </div>
-        </div> -->
+        </div>
         <div class="row mb-3" id="content">
         </div>
         <div class="row">

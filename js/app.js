@@ -83,47 +83,12 @@ var milestones = [
 // ORD Percentage
 function NSCompletionPercentage(){
     var percentage_header = document.getElementById('completion-percentage');
-    var now = new Date().getTime()
-    var percentage_completed = (now - enlistment_date) / (ord_date - enlistment_date) * 100
-    percentage_header.innerHTML = `${Math.round((percentage_completed + Number.EPSILON) * 100)/100}% Completed`;
+    var percentage_bar = document.getElementById('percentage-bar');
+    var now = new Date().getTime();
+    var percentage_completed = (now - enlistment_date) / (ord_date - enlistment_date) * 100;
+    percentage_bar.className = `c100 p${Math.floor(percentage_completed)} big green`;
+    percentage_header.innerHTML = `${Math.round((percentage_completed + Number.EPSILON) * 100)/100}%`;
 }
-
-/*
-var ring = document.getElementsByTagName('path')[0];
-// var range = document.getElementsByTagName('input')[0];
-var text = document.getElementsByTagName('text')[0];
-var toRadians = Math.PI / 180;
-var r = 100;
-
-function draw() {
-  // Update the wheel giving to it a value in degrees,
-  // getted from the percentage of the input value
-  // a.k.a. (value * 360) / 100
-  //   var degrees = range.value * 3.5999;
-  var degrees = 30 * 3.5999; //Hardcoded
-  // Convert the degrees value to radians
-  var rad = degrees * toRadians;
-  // Determine X and cut to 2 decimals
-  var x = (Math.sin(rad) * r).toFixed(2);
-  // Determine Y and cut to 2 decimals
-  var y = -(Math.cos(rad) * r).toFixed(2);
-  // The another half ring. Same as (deg > 180) ? 1 : 0
-  var lenghty = Number(degrees > 180);
-  // Moveto + Arcto
-  var descriptions = ['M', 0, 0, 'v', -r, 'A', r, r, 1, lenghty, 1, x, y, 'z'];
-  // Apply changes to the path
-  ring.setAttribute('d', descriptions.join(' '));
-  // Update the numeric display
-  text.textContent = range.value;
-}
-
-// Translate the center axis to a half of total size
-ring.setAttribute('transform', 'translate(' + r + ', ' + r + ')');
-// Bind the change event to the input
-range.addEventListener('input', draw);
-// Force to init the first time;
-
-*/
 
 window.onload = ()=>{
     let content = document.getElementById("content");
