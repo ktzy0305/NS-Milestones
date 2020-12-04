@@ -25,12 +25,9 @@ body{
     padding: 0;
 }
 
-/* NS Completion Percentage */
 .middle{
-    /* text-align: center; */
     display: block;
     margin: auto;
-    /* padding-bottom: 20px; */
 }
 
 /* Progress Bar */
