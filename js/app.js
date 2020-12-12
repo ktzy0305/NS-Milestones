@@ -77,7 +77,10 @@ var milestones = [
     new Milestone("13th Bookout 🤗", new Date("Nov 27, 2020 16:00:00"), "timer-0017"),
     new Milestone("BMT Passing Out Parade 💪", new Date("Dec 4, 2020 05:30:00"), "timer-0018"),
     new Milestone("4️⃣ Months In NS", new Date("Dec 11, 2020 00:00:00"), "timer-0019"),
-    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0020"),
+    new Milestone("14th Bookout 💪", new Date("Dec 18, 2020 20:00:00"), "timer-0020"),
+    new Milestone("15th Bookout 💪", new Date("Dec 24, 2020 20:00:00"), "timer-0021"),
+    new Milestone("16th Bookout 💪", new Date("Dec 31, 2020 20:00:00"), "timer-0022"),
+    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0100"),
 ]
 
 // ORD Percentage
