@@ -30,7 +30,11 @@ body{
     margin: auto;
 }
 
-/* Progress Bar */
+#days_to_ord{
+    text-align: center;
+}
+
+/* Progress Bar
 svg {
     width: 200px;
     height: 200px;
@@ -121,4 +125,4 @@ svg {
     100%{
         transform: rotate(180deg);
     }
-}
+} */

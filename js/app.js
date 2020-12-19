@@ -60,26 +60,28 @@ class Milestone{
 var milestones = [
     new Milestone("1st Bookout 😍", new Date("Aug 28, 2020 09:00:00"), "timer-0001"),
     new Milestone("2nd Bookout 🔥", new Date("Sep 5, 2020 15:00:00"), "timer-0002"),
-    new Milestone("1️⃣ Month In NS", new Date("Sep 11, 2020 00:00:00"), "timer-0003"),
+    new Milestone("1️⃣ Month", new Date("Sep 11, 2020 00:00:00"), "timer-0003"),
     new Milestone("3rd Bookout 😲", new Date("Sep 12, 2020 17:00:00"), "timer-0004"),
     new Milestone("4th Bookout 🙃", new Date("Sep 17, 2020 16:00:00"), "timer-0005"),
     new Milestone("5th Bookout 🥴", new Date("Sep 25, 2020 19:00:00"), "timer-0006"),
     new Milestone("6th Bookout 😢", new Date("Oct 2, 2020 21:00:00"), "timer-0007"),
     new Milestone("7th Bookout 😷", new Date("Oct 9, 2020 19:00:00"), "timer-0008"),
-    new Milestone("2️⃣ Months In NS", new Date("Oct 11, 2020 00:00:00"), "timer-0009"),
+    new Milestone("2️⃣ Months", new Date("Oct 11, 2020 00:00:00"), "timer-0009"),
     new Milestone("8th Bookout 🤔", new Date("Oct 17, 2020 12:00:00"), "timer-0010"),
     new Milestone("9th Bookout 😵", new Date("Oct 23, 2020 13:00:00"), "timer-0011"),
     new Milestone("End Of Field Camp 🏋️", new Date("Nov 2, 2020 20:00:00"), "timer-0012"),
     new Milestone("10th Bookout 🤭", new Date("Nov 6, 2020 15:00:00"), "timer-0013"),
-    new Milestone("3️⃣ Months In NS", new Date("Nov 11, 2020 00:00:00"), "timer-0014"),
+    new Milestone("3️⃣ Months", new Date("Nov 11, 2020 00:00:00"), "timer-0014"),
     new Milestone("11th Bookout 🤠", new Date("Nov 12, 2020 12:00:00"), "timer-0015"),
     new Milestone("12th Bookout 😏", new Date("Nov 20, 2020 14:00:00"), "timer-0016"),
     new Milestone("13th Bookout 🤗", new Date("Nov 27, 2020 16:00:00"), "timer-0017"),
     new Milestone("BMT Passing Out Parade 💪", new Date("Dec 4, 2020 05:30:00"), "timer-0018"),
-    new Milestone("4️⃣ Months In NS", new Date("Dec 11, 2020 00:00:00"), "timer-0019"),
-    new Milestone("14th Bookout 💪", new Date("Dec 18, 2020 20:00:00"), "timer-0020"),
-    new Milestone("15th Bookout 💪", new Date("Dec 24, 2020 20:00:00"), "timer-0021"),
-    new Milestone("16th Bookout 💪", new Date("Dec 31, 2020 20:00:00"), "timer-0022"),
+    new Milestone("4️⃣ Months", new Date("Dec 11, 2020 00:00:00"), "timer-0019"),
+    new Milestone("14th Bookout 👋🏼", new Date("Dec 18, 2020 17:30:00"), "timer-0020"),
+    new Milestone("15th Bookout 🎅🏽", new Date("Dec 24, 2020 18:00:00"), "timer-0021"),
+    new Milestone("16th Bookout 🎆", new Date("Dec 31, 2020 18:00:00"), "timer-0022"),
+    new Milestone("5️ Months", new Date("Jan 11, 2021 00:00:00"), "timer-0025"),
+    new Milestone("End Of FT 🙌🏻", new Date("Feb 5, 2021 18:00:00"), "timer-0030"),
     new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0100"),
 ]
 
@@ -93,6 +95,13 @@ function NSCompletionPercentage(){
     percentage_header.innerHTML = `${Math.round((percentage_completed + Number.EPSILON) * 100)/100}%`;
 }
 
+function DaysToORD(){
+    var days_countdown = document.getElementById('days_to_ord');
+    var now = new Date().getTime();
+    var days_remaining = (ord_date - now) / (1000 * 60 * 60 * 24);
+    days_countdown.innerHTML = `${Math.ceil(days_remaining)} days to ORD`;
+}
+
 window.onload = ()=>{
     let content = document.getElementById("content");
     for(var i = 0; i < milestones.length; i++){
@@ -100,4 +109,5 @@ window.onload = ()=>{
         milestones[i].startCountdown();
     }
     NSCompletionPercentage();
+    DaysToORD();
 }
