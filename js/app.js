@@ -78,7 +78,7 @@ var milestones = [
     new Milestone("BMT Passing Out Parade 💪", new Date("Dec 4, 2020 05:30:00"), "timer-0018"),
     new Milestone("4️⃣ Months", new Date("Dec 11, 2020 00:00:00"), "timer-0019"),
     new Milestone("14th Bookout 👋🏼", new Date("Dec 18, 2020 17:30:00"), "timer-0020"),
-    new Milestone("15th Bookout 🎅🏽", new Date("Dec 24, 2020 18:00:00"), "timer-0021"),
+    new Milestone("15th Bookout 🎅🏽", new Date("Dec 24, 2020 12:30:00"), "timer-0021"),
     new Milestone("16th Bookout 🎆", new Date("Dec 31, 2020 18:00:00"), "timer-0022"),
     new Milestone("5️ Months", new Date("Jan 11, 2021 00:00:00"), "timer-0025"),
     new Milestone("End Of FT 🙌🏻", new Date("Feb 5, 2021 18:00:00"), "timer-0030"),
