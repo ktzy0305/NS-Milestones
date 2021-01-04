@@ -30,6 +30,26 @@ body{
     margin: auto;
 }
 
+.text-small{
+    font-size: small !important;
+}
+
 #days_to_ord{
     text-align: center;
+}
+
+@media only screen and (max-width: 768px)  {
+    .c100.big {
+        font-size: 180px !important;
+    }
+}
+
+@media only screen and (max-width: 420px)  {
+    .c100.big {
+        font-size: 160px !important;
+    }
+
+    #days_to_ord{
+        font-size: 1.5em;
+    }
 }
