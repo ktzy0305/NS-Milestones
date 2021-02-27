@@ -34,8 +34,13 @@ body{
     font-size: small !important;
 }
 
-#days_to_ord{
+.text-center{
     text-align: center;
+}
+
+#day_counter{
+    font-size: 2em;
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 768px)  {
@@ -49,7 +54,7 @@ body{
         font-size: 160px !important;
     }
 
-    #days_to_ord{
+    #day_counter{
         font-size: 1.5em;
     }
 }

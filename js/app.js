@@ -91,6 +91,11 @@ var milestones = [
     new Milestone("6️⃣ Months", new Date("Feb 11, 2021 00:00:00"), "timer-0031"),
     new Milestone("23rd Bookout 🧧", new Date("Feb 11, 2021 13:00:00"), "timer-0032"),
     new Milestone("24th Bookout 🛠️", new Date("Feb 19, 2021 18:30:00"), "timer-0033"),
+    new Milestone("25th Bookout 💈", new Date("Feb 26, 2021 18:30:00"), "timer-0034"),
+    new Milestone("26th Bookout 🏒", new Date("Mar 5, 2021 18:30:00"), "timer-0035"),
+    new Milestone("7️⃣ Months", new Date("Mar 11, 2021 00:00:00"), "timer-0036"),
+    new Milestone("27th Bookout 🎬", new Date("Mar 12, 2021 18:30:00"), "timer-0037"),
+    new Milestone("28th Bookout 👕", new Date("Mar 19, 2021 18:30:00"), "timer-0038"),
     new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0100"),
 ]
 
@@ -108,14 +113,61 @@ function DaysToORD(){
     var days_countdown = document.getElementById('days_to_ord');
     var now = new Date().getTime();
     var days_remaining = (ord_date - now) / (1000 * 60 * 60 * 24);
-    days_countdown.innerHTML = `${Math.ceil(days_remaining)} days to ORD`;
+    days_countdown.innerHTML = `${Math.ceil(days_remaining)}`;
+}
+
+function NextMilestone(){
+    var now = new Date().getTime();
+    var mininum_distance = null;
+    var next_milestone_index = 0;
+    for(i = 0; i < milestones.length;  i++){
+        var distance = milestones[i].date - now;
+        if(distance > 0){
+            if (mininum_distance == null){
+                mininum_distance = distance;
+                next_milestone_index = i;
+            }
+            else if(distance < mininum_distance){
+                mininum_distance = distance;
+                next_milestone_index = i;
+            }
+        }
+    }
+    var next_milestone_index = milestones[upcoming_milestone_index];
+    return next_milestone_index;
+}
+
+function GetUpcomingMilestones(){
+    var now = new Date().getTime();
+    var upcoming_milestones = milestones.filter(milestone => milestone.date - now > 0);
+    upcoming_milestones.sort(function(a, b){
+        return a.date - b.date;
+    });
+    return upcoming_milestones;
+}
+
+function GetCompletedMilestones(){
+    var now = new Date().getTime();
+    var completed_milestones = milestones.filter(milestone => milestone.date - now < 0);
+    completed_milestones.sort(function(a, b){
+        return b.date - a.date;
+    });
+    return completed_milestones;
 }
 
 window.onload = ()=>{
-    let content = document.getElementById("content");
-    for(var i = 0; i < milestones.length; i++){
-        content.innerHTML += milestones[i].render();
-        milestones[i].startCountdown();
+    let upcoming_content = document.getElementById("upcoming_content");
+    let content = document.getElementById("completed_content");
+    var upcoming_milestones = GetUpcomingMilestones();
+    var completed_milestones = GetCompletedMilestones();
+    for(var i = 0; i < upcoming_milestones.length; i++){
+        upcoming_content.innerHTML += upcoming_milestones[i].render();
+        upcoming_milestones[i].startCountdown();
+    }
+
+    for(var i = 0; i < completed_milestones.length; i++){
+        content.innerHTML += completed_milestones[i].render();
+        completed_milestones[i].startCountdown();
     }
     NSCompletionPercentage();
     DaysToORD();
