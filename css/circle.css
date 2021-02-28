@@ -73,7 +73,7 @@
   width: 5em;
   line-height: 5em;
   font-size: 0.2em;
-  /* color: #cccccc; */
+  /* color: #cccccc;  */
   font-weight: 600;
   display: block;
   text-align: center;
@@ -91,6 +91,7 @@
   -o-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .c100:after {
   position: absolute;
   top: 0.08em;
