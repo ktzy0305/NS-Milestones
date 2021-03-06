@@ -38,9 +38,40 @@ body{
     text-align: center;
 }
 
-#day_counter{
-    font-size: 2em;
-    font-weight: 600;
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon_size{
+    width: 40px;
+}
+
+.vert-helper{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-card{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#days_completed, #days_to_ord{
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: right;
+}
+
+#child-left{
+    float: left;
+    width: 50%;
+}
+
+#child-right{
+    float: right;
+    width: 50%;
 }
 
 @media only screen and (max-width: 768px)  {
