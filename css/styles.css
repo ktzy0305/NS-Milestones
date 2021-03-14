@@ -1,6 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #f0f0f0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.home-link{
+    font-weight: bold !important;
+    font-size: x-large;
 }
 
 .card{
@@ -72,6 +85,20 @@ body{
 #child-right{
     float: right;
     width: 50%;
+}
+
+#spacer{
+    height: 10vh;
+}
+
+@media only screen and (max-width: 992px){
+    .card-title{
+        font-size: 1.1em;
+    }
+
+    p, .countdown-timer{
+        font-size: 0.95em;
+    }
 }
 
 @media only screen and (max-width: 768px)  {

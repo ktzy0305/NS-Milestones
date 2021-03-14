@@ -9,14 +9,36 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/circle.css">
     <script src="js/app.js" type="module"></script>
+    <script src="js/navbar.js" type="module"></script>
 </head>
 
 <body>
+    <header id="navbar">
+        <nav class="navbar-container container">
+            <a href="/" class="home-link">
+                <img class="navbar-logo" src="/assets/icons/NS.svg" alt="logo">
+                NS Milestones
+            </a>
+            <button type="button" class="navbar-toggle" aria-label="Open navigation menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-menu">
+                <ul class="navbar-links">
+                    <li class="navbar-item"><a class="navbar-link" href="#upcoming">Upcoming</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#completed">Completed</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="#resources">Resources</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <div class="container">
-        <h1>NS Milestones</h1>
+        <div id="spacer"></div>
         <div class="row">
             <div class="middle">
                 <div id="percentage-bar" class="c100 big green">
@@ -73,16 +95,17 @@
             </div>
         </div>
         <hr>
-        <h2>Upcoming</h2>
+        <h2 id="upcoming">Upcoming</h2>
         <div class="row mb-5" id="upcoming_content">
         </div>
         <hr>
-        <h2>Completed</h2>
+        <h2 id="completed">Completed</h2>
         <div class="row mb-5" id="completed_content">
         </div>
         <div class="row">
             <div class="col-12">
                 <hr>
+                <h2 id="resources">Useful Resources</h2>
                 <ul class="help-links">
                     <li>
                         <b>National Service Resources : </b>

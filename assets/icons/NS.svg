@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <clipPath id="clip-NS">
+      <rect width="1000" height="1000"/>
+    </clipPath>
+  </defs>
+  <g id="NS" clip-path="url(#clip-NS)">
+    <rect width="1000" height="1000" fill="#fff"/>
+    <text id="NS-2" data-name="NS" transform="translate(179 643)" fill="#a00" font-size="500" font-family="Dubai-Bold, Dubai" font-weight="700"><tspan x="0" y="0">NS</tspan></text>
+  </g>
+</svg>
