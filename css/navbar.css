@@ -12,7 +12,7 @@
     --navbar-height: 64px;
     position: fixed;
     height: var(--navbar-height);
-    width: 100vw;
+    width: 100%;
     background-color: var(--navbar-bg-color);
     top: 0;
     left: 0;
