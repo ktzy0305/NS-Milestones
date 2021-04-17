@@ -62,7 +62,8 @@
 }
 
 .navbar-link:focus,
-.navbar-link:hover {
+.navbar-link:hover,
+.navbar-link.active{
     color: white;
     /* color: var(--navbar-text-color-focus); */
     background-color: var(--navbar-bg-contrast);

@@ -1,4 +1,4 @@
-import { months } from "./data.js"
+import { months } from "../data.js"
 
 const zeroPad = (num, places) => String(num).padStart(places, '0');
 

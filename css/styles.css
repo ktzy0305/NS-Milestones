@@ -11,6 +11,11 @@ body{
     box-sizing: border-box;
 }
 
+.page-content{
+    --navbar-height: 64px;
+    padding-top: var(--navbar-height);
+}
+
 .home-link{
     font-weight: bold !important;
     font-size: x-large;

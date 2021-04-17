@@ -1,4 +1,4 @@
-import { formatDate } from "./dateformatter.js"
+import { formatDate } from "../utils/dateformatter.js"
 
 class Milestone{
     constructor(event_name, date, timer_id){

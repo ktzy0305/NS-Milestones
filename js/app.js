@@ -71,20 +71,22 @@ function GetCompletedMilestones(){
 
 window.onload = ()=>{
     let upcoming_content = document.getElementById("upcoming_content");
-    let content = document.getElementById("completed_content");
+    // let content = document.getElementById("completed_content");
     var upcoming_milestones = GetUpcomingMilestones();
-    var completed_milestones = GetCompletedMilestones();
+    // var completed_milestones = GetCompletedMilestones();
 
     for(var i = 0; i < upcoming_milestones.length; i++){
         upcoming_content.innerHTML += upcoming_milestones[i].render();
         upcoming_milestones[i].startCountdown();
     }
 
-    for(var i = 0; i < completed_milestones.length; i++){
-        content.innerHTML += completed_milestones[i].render();
-        completed_milestones[i].startCountdown();
-    }
+    // for(var i = 0; i < completed_milestones.length; i++){
+    //     content.innerHTML += completed_milestones[i].render();
+    //     completed_milestones[i].startCountdown();
+    // }
     NSCompletionPercentage();
     DaysCompleted();
     DaysToORD();
 }
+
+export { GetCompletedMilestones };

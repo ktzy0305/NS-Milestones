@@ -1,4 +1,4 @@
-import { Milestone } from "./milestone.js"
+import { Milestone } from "./classes/milestone.js"
 
 var milestones = [
     new Milestone("1st Bookout 😍", new Date("Aug 28, 2020 09:00:00"), "timer-0001"),
@@ -43,9 +43,13 @@ var milestones = [
     new Milestone("30th Bookout", new Date("Apr 1, 2021 18:30:00"), "timer-0040"),
     new Milestone("31st Bookout", new Date("Apr 9, 2021 18:30:00"), "timer-0041"),
     new Milestone("8️⃣ Months", new Date("Apr 11, 2021 00:00:00"), "timer-0042"),
-    new Milestone("32nd Bookout", new Date("Apr 17, 2021 18:30:00"), "timer-0043"),
-    new Milestone("33rd Bookout", new Date("Apr 24, 2021 18:30:00"), "timer-0044"),
-    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0100"),
+    new Milestone("32nd Bookout", new Date("Apr 16, 2021 18:30:00"), "timer-0043"),
+    new Milestone("33rd Bookout", new Date("Apr 23, 2021 18:30:00"), "timer-0044"),
+    new Milestone("34th Bookout", new Date("Apr 30, 2021 18:30:00"), "timer-0045"),
+    new Milestone("35th Bookout", new Date("May 7, 2021 18:30:00"), "timer-0046"),
+    new Milestone("9️⃣ Months", new Date("May 11, 2021 00:00:00"), "timer-0047"),
+    new Milestone("36th Bookout", new Date("May 14, 2021 18:30:00"), "timer-0048"),
+    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0120"),
 ]
 
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
