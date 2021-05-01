@@ -10,8 +10,14 @@ function NSCompletionPercentage(){
     var percentage_bar = document.getElementById('percentage-bar');
     var now = new Date().getTime();
     var percentage_completed = (now - enlistment_date) / (ord_date - enlistment_date) * 100;
-    percentage_bar.className = `c100 p${Math.floor(percentage_completed)} big green`;
-    percentage_header.innerHTML = `${Math.round((percentage_completed + Number.EPSILON) * 100)/100}%`;
+    if (percentage_completed < 100){
+        percentage_bar.className = `c100 p${Math.floor(percentage_completed)} big green`;
+        percentage_header.innerHTML = `${Math.round((percentage_completed + Number.EPSILON) * 100)/100}%`;
+    }
+    else{
+        percentage_bar.className = "c100 p100 big green";
+        percentage_header.innerHTML = "100%";
+    }
 }
 
 // Shows number of days completed
@@ -19,7 +25,7 @@ function DaysCompleted(){
     var days_completed_counter = document.getElementById('days_completed');
     var now = new Date().getTime();
     var days_completed = (now - enlistment_date) / (1000 * 60 * 60 * 24);
-    days_completed_counter.innerHTML = `${Math.ceil(days_completed)}`
+    days_completed_counter.innerHTML = `${Math.ceil(days_completed)}`;
 }
 
 // Shows number of days to ORD
@@ -27,7 +33,18 @@ function DaysToORD(){
     var days_to_ord_counter = document.getElementById('days_to_ord');
     var now = new Date().getTime();
     var days_remaining = (ord_date - now) / (1000 * 60 * 60 * 24);
-    days_to_ord_counter.innerHTML = `${Math.ceil(days_remaining)}`;
+    if (days_remaining > 0){
+        days_to_ord_counter.innerHTML = `${Math.ceil(days_remaining)}`;
+    }
+    else{
+        days_to_ord_counter.innerHTML = 0;
+        Wadio();
+    }
+}
+
+function Wadio(){
+    var ord_message = document.getElementById("ord_message");
+    ord_message.innerHTML = "Where Got Time? Wadio!"
 }
 
 function NextMilestone(){
@@ -71,19 +88,13 @@ function GetCompletedMilestones(){
 
 window.onload = ()=>{
     let upcoming_content = document.getElementById("upcoming_content");
-    // let content = document.getElementById("completed_content");
     var upcoming_milestones = GetUpcomingMilestones();
-    // var completed_milestones = GetCompletedMilestones();
 
     for(var i = 0; i < upcoming_milestones.length; i++){
         upcoming_content.innerHTML += upcoming_milestones[i].render();
         upcoming_milestones[i].startCountdown();
     }
 
-    // for(var i = 0; i < completed_milestones.length; i++){
-    //     content.innerHTML += completed_milestones[i].render();
-    //     completed_milestones[i].startCountdown();
-    // }
     NSCompletionPercentage();
     DaysCompleted();
     DaysToORD();
