@@ -42,6 +42,21 @@ function DaysToORD(){
     }
 }
 
+// Shows number of weeks to ORD
+function WeeksToORD(){
+    var weeks_to_ord_counter = document.getElementById('weeks_to_ord');
+    var now = new Date().getTime();
+    var days_remaining = (ord_date - now) / (1000 * 60 * 60 * 24);
+    var weeks_remaining = days_remaining / 7;
+    if (weeks_remaining > 0){
+        weeks_to_ord_counter.innerHTML = `${Math.ceil(weeks_remaining)}`;
+    }
+    else{
+        weeks_to_ord_counter.innerHTML = 0;
+    }
+}
+
+// ORD Message
 function Wadio(){
     var ord_message = document.getElementById("ord_message");
     ord_message.innerHTML = "Where Got Time? Wadio!"
@@ -98,6 +113,7 @@ window.onload = ()=>{
     NSCompletionPercentage();
     DaysCompleted();
     DaysToORD();
+    WeeksToORD();
 }
 
 export { GetCompletedMilestones };

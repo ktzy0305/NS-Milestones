@@ -76,7 +76,7 @@ body{
     padding-bottom: 20px;
 }
 
-#days_completed, #days_to_ord{
+#days_completed, #days_to_ord, #weeks_to_ord{
     font-size: 1.75em;
     font-weight: bold;
     text-align: right;
