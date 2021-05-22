@@ -51,7 +51,7 @@ var milestones = [
     new Milestone("36th Bookout", new Date("May 14, 2021 18:30:00"), "timer-0048"),
     new Milestone("37th Bookout", new Date("May 21, 2021 18:30:00"), "timer-0049"),
     new Milestone("38th Bookout", new Date("May 28, 2021 18:30:00"), "timer-0050"),
-    // new Milestone("39th Bookout", new Date("Jun 4, 2021 18:30:00"), "timer-0051"),
+    new Milestone("39th Bookout", new Date("Jun 5, 2021 18:30:00"), "timer-0051"),
     new Milestone("1️⃣0️⃣ Months", new Date("Jun 11, 2021 00:00:00"), "timer-0052"),
     // new Milestone("40th Bookout", new Date("Jun 11, 2021 18:30:00"), "timer-0053"),
     // new Milestone("Common (End)", new Date("Jun 16, 2021 18:30:00"), "timer-0054"),

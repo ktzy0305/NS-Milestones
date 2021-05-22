@@ -37,10 +37,14 @@ body{
     font-weight: 600;
 }
 
-.help-links{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.help-link{
+    text-decoration: none;
+    text-align: center;
+}
+
+.help-link-icon{
+    max-width: 200px;
+    height: 100px;
 }
 
 .middle{
@@ -116,11 +120,21 @@ body{
     .c100.big {
         font-size: 180px !important;
     }
+
+    .help-link-icon{
+        max-width: 180px;
+        height: 80px;
+    }
 }
 
 @media only screen and (max-width: 420px)  {
     .c100.big {
         font-size: 160px !important;
+    }
+
+    .help-link-icon{
+        max-width: 160px;
+        height: 70px;
     }
 
     #day_counter{
