@@ -68,10 +68,12 @@ var milestones = [
     new Milestone("1️⃣ Year", new Date("Aug 11, 2021 00:00:00"), "timer-0065"),
     new Milestone("49th Bookout 🏋️", new Date("Aug 13, 2021 18:30:00"), "timer-0066"),
     new Milestone("SCGP 🗡️ 🎉🎉🎉", new Date("Aug 16, 2021 16:00:00"), "timer-0067"),
-    // new Milestone("50th Bookout", new Date("Aug 20, 2021 18:30:00"), "timer-0068"),
-    // new Milestone("51st Bookout", new Date("Sep 3, 2021 18:30:00"), "timer-0069"),
-    // new Milestone("52nd Bookout", new Date("Sep 10, 2021 18:30:00"), "timer-0070"),
-    // new Milestone("1️⃣ Year 1️⃣ Month", new Date("Sep 11, 2021 00:00:00"), "timer-0071"),
+    new Milestone("50th Bookout 🎖️", new Date("Aug 27, 2021 18:30:00"), "timer-0068"),
+    new Milestone("51st Bookout 😶", new Date("Sep 3, 2021 18:30:00"), "timer-0069"),
+    new Milestone("52nd Bookout 🤹", new Date("Sep 10, 2021 18:30:00"), "timer-0070"),
+    new Milestone("1️⃣ Year 1️⃣ Month", new Date("Sep 11, 2021 00:00:00"), "timer-0071"),
+    new Milestone("1️⃣ Year 2️⃣ Month", new Date("Oct 11, 2021 00:00:00"), "timer-0077"),
+    new Milestone("1️⃣ Year 3️⃣ Month", new Date("Nov 11, 2021 00:00:00"), "timer-0084"),
     new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0130"),
 ]
 
