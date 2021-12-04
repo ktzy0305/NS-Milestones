@@ -33,9 +33,13 @@ class Milestone{
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Weeks and remaining days in a week
+            var weeks = Math.floor(days/7);
+            days = Math.floor(days%7)
                 
             // Output the result in an element with id="demo"
-            document.getElementById(this.timer_id).innerHTML = days + " days<br> " + hours + " hours "
+            document.getElementById(this.timer_id).innerHTML = weeks + " weeks " + days + " days<br> " + hours + " hours "
             + minutes + " minutes " + seconds + " seconds";
                 
             // If the count down is over, write some text 
