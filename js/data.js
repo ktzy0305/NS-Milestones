@@ -93,8 +93,9 @@ var milestones = [
     new Milestone("67th Bookout 🐬", new Date("Dec 31, 2021 15:00:00"), "timer-0090"),
     new Milestone("68th Bookout 🍿", new Date("Jan 7, 2022 15:00:00"), "timer-0091"),
     new Milestone("1️⃣ Year 5️⃣ Month", new Date("Jan 11, 2022 00:00:00"), "timer-0092"),
+    new Milestone("69th Bookout 🪐", new Date("Jan 14, 2022 15:00:00"), "timer-0093"),
     new Milestone("1️⃣ Year 6️⃣ Month", new Date("Feb 11, 2022 00:00:00"), "timer-0097"),
-    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 18:00:00"), "timer-0130"),
+    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 00:00:00"), "timer-0130"),
 ]
 
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
