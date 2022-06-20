@@ -125,8 +125,12 @@ var milestones = [
     new Milestone("93rd Bookout 🍨", new Date("Jul 2, 2022 21:00:00"), "timer-0122"),
     new Milestone("94th Bookout 🌹", new Date("Jul 9, 2022 21:00:00"), "timer-0123"),
     new Milestone("1️⃣ Year 1️⃣1️⃣ Months", new Date("Jul 11, 2022 00:00:00"), "timer-0124"),
-    new Milestone("Bring Everything Home 👜", new Date("Jul 29, 2022 00:00:00"), "timer-0130"),
-    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 00:00:00"), "timer-0131"),
+    new Milestone("95th Bookout 🐺", new Date("Jul 16, 2022 21:00:00"), "timer-0125"),
+    new Milestone("96th Bookout 👘", new Date("Jul 23, 2022 21:00:00"), "timer-0126"),
+    new Milestone("Bring Everything Home 👜", new Date("Jul 29, 2022 00:00:00"), "timer-0127"),
+    new Milestone("97th Bookout 🗼", new Date("Jul 30, 2022 21:00:00"), "timer-0128"),
+    new Milestone("98th Bookout 👯", new Date("Aug 5, 2022 17:00:00"), "timer-0129"),
+    new Milestone("Operational Ready Date 🎉", new Date("Aug 10, 2022 00:00:00"), "timer-0130"),
 ]
 
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
